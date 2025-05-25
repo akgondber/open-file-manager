@@ -138,6 +138,14 @@ await openFileManager('/path/to/dir');
 * On Linux, the function will try multiple file managers and use the first one available
 * Supports FreeBSD, OpenBSD, and SunOS in addition to major platforms
 
+## Related
+
+You might also be interested in:
+
+* [open-finder-dialog](https://www.npmjs.com/package/open-finder-dialog): Open a finder dialog window (finder prompt) programmatically. Only works on MacOS. | [homepage](https://github.com/jonschlinkert/open-finder-dialog "Open a finder dialog window (finder prompt) programmatically. Only works on MacOS.")
+* [open-linux-file-dialog](https://www.npmjs.com/package/open-linux-file-dialog): Open a file dialog window programmatically to allow the user to select one or more… [more](https://github.com/jonschlinkert/open-linux-file-dialog) | [homepage](https://github.com/jonschlinkert/open-linux-file-dialog "Open a file dialog window programmatically to allow the user to select one or more files. Only works on Linux. No dependencies. Supports zenity (GNOME), kdialog (KDE), yad (Yet Another Dialog), qarma (Qt-based), matedialog (MATE), rofi (window switcher wi")
+* [open-windows-file-dialog](https://www.npmjs.com/package/open-windows-file-dialog): Programmatically open a file dialog window (explorer) for picking files. Only works on Windows. Also… [more](https://github.com/jonschlinkert/open-windows-file-dialog) | [homepage](https://github.com/jonschlinkert/open-windows-file-dialog "Programmatically open a file dialog window (explorer) for picking files. Only works on Windows. Also see: open-finder-dialog, open-linux-file-dialog, and open-file-manager-dialog for other platforms.")
+
 ## About
 
 <details>
