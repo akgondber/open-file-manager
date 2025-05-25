@@ -1,0 +1,127 @@
+{
+  "name": "open-file-manager",
+  "description": "Cross-platform utility to open a file or directory in the system's default file manager (Finder, Explorer, Nautilus, etc.)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage": "https://github.com/jonschlinkert/open-file-manager",
+  "repository": "jonschlinkert/open-file-manager",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/open-file-manager/issues"
+  },
+  "bin": {
+    "open-file-manager": "dist/bin/cli.js"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "eslint": "npx eslint --ext .ts .",
+    "test": "ts-mocha -r esbuild-register 'test/*.test.ts' --exit",
+    "tsup": "npm run clean && npx tsup"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "esbuild-register": "^3.5.0",
+    "eslint": "^8.57.0",
+    "gulp-format-md": "^2.0.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.5.3"
+  },
+  "keywords": [
+    "cli",
+    "command-line",
+    "cross-platform",
+    "desktop",
+    "dialog",
+    "directory",
+    "dmenu",
+    "electron",
+    "explorer",
+    "file chooser",
+    "file dialog",
+    "file manager",
+    "file picker",
+    "file selection dialog",
+    "file selection",
+    "file system",
+    "file-browser",
+    "file-chooser",
+    "file-dialog",
+    "file-explorer",
+    "file-manager",
+    "file-picker",
+    "file-selector",
+    "file-system",
+    "file",
+    "files",
+    "finder",
+    "folder",
+    "fzf",
+    "gnome",
+    "gui",
+    "kde",
+    "kdialog",
+    "linux",
+    "macos",
+    "mate",
+    "matedialog",
+    "native-dialog",
+    "nautilus",
+    "open-file",
+    "open",
+    "powershell",
+    "prompt",
+    "qarma",
+    "qt",
+    "rofi",
+    "select",
+    "terminal",
+    "utility",
+    "windows-api",
+    "windows-forms",
+    "windows",
+    "yad",
+    "zenity"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "reflinks": [
+      "verb"
+    ],
+    "related": [
+      "open-file-manager-dialog",
+      "open-finder-dialog",
+      "open-linux-file-dialog",
+      "open-windows-file-dialog"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
