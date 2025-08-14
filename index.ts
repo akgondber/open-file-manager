@@ -12,7 +12,7 @@ export const openFileManager = async (pathname = '.') => {
   try {
     switch (process.platform) {
       case 'win32':
-        return exec(`explorer /select "${filepath}"`);
+        return exec(`start /b explorer /select,"${filepath}"`);
       case 'darwin':
         return exec(`open -R "${filepath}"`);
       case 'linux':
